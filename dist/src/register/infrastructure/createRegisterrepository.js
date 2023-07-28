@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InMemoryRegisterRepository = void 0;
 const socket_io_client_1 = __importDefault(require("socket.io-client"));
-const socket = (0, socket_io_client_1.default)("http://localhost:4008");
+const socket = (0, socket_io_client_1.default)("http://54.175.153.141:4000");
 //import { createPool } from "../../mysql";
 const Register_1 = require("../domain/Register");
 class InMemoryRegisterRepository {
