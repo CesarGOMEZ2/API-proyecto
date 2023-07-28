@@ -20,10 +20,10 @@ class CreateRegisterController {
             const temperatura = req.body.temperatura;
             const humedad = req.body.humedad;
             const resultado = yield this.postRegister.createRegister(temperatura, humedad);
-            console.log("controller", resultado.temperatura);
+            console.log("controller", resultado);
             res
                 .status(200)
-                .send(`La solicitud ${resultado.temperatura} fue éxitoso`);
+                .send(`La solicitud ${resultado} fue éxitoso`);
         });
     }
 }

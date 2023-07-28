@@ -14,9 +14,9 @@ class GetAllRegister {
     constructor(RegisterRepository) {
         this.RegisterRepository = RegisterRepository;
     }
-    execute(temperatura, humedad) {
+    execute(datos) {
         return __awaiter(this, void 0, void 0, function* () {
-            const music = yield this.RegisterRepository.getAll(temperatura, humedad);
+            const music = yield this.RegisterRepository.getAll(datos);
             return music;
         });
     }

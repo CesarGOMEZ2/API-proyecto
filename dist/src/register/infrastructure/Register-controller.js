@@ -17,9 +17,8 @@ class registerController {
     getAllRegister(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                let temperatura = req.body.temperatura;
-                let humedad = req.body.humedad;
-                const Register = yield this.getAllRegistersUseCase.execute(temperatura, humedad);
+                let datos = req.body.datos;
+                const Register = yield this.getAllRegistersUseCase.execute(datos);
                 res.status(200).send(Register);
             }
             catch (error) {
